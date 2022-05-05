@@ -17,14 +17,14 @@
 
 // stampare su html numero
 
-// const myUl = document.querySelector("ul.list");
-// // const ul = document.querySelector("ul");
+//  const myUl = document.querySelector("div.prova");
+// //   const ul = document.querySelector("ul");
 
-// for (let index = 0; index < 10; index++) {
-//     const element = `<li class="box box--${index}">${index}</li>`;
-//     myUl.innerHTML += element;
+//  for (let index = 0; index <= 100; index++) {
+//      const element = `<div class="col-2">${index}</div>`;
+//      myUl.innerHTML += element;
     
-// }
+//  }
 
 // const myUl = document.querySelector("ul.list");
 // const myLi = document.createElement("li");
@@ -43,25 +43,35 @@
 
 // Creazione programma che stampa numeri da 1 a 100 su console
 
+const duck = document.querySelector("div.n_counter")
+
 for (let number = 1; number <= 100; number++ ) {
 
     // Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
     if ((number % 3 === 0) && (number % 5 === 0)) {
+        const element = `<div class="col-1 mx-3">FizzBuzz</div>`
         console.log("iterazione n: FizzBuzz");
+        duck.innerHTML += element;
     }
 
     // Per i multipli di 3 stampi “Fizz” al posto del numero
     else if (number % 3 === 0) {
+        const element = `<div class="col-1 mx-3">Fizz</div>`
         console.log("iterazione n: Fizz");
+        duck.innerHTML += element;
     }
 
     // Per i multipli di 5 stampi "Buzz" al posto del numero.
     else if (number % 5 === 0) {
+        const element = `<div class="col-1 mx-3">Buzz</div>`
         console.log("iterazione n: Buzz");
+        duck.innerHTML += element;
     }
 
     else {
+        const element = `<div class="col-1 mx-3">${number}</div>`
         console.log("iterazione n: " + number);
+        duck.innerHTML += element;
     }
 }
 
