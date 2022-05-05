@@ -49,27 +49,27 @@ for (let number = 1; number <= 100; number++ ) {
 
     // Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
     if ((number % 3 === 0) && (number % 5 === 0)) {
-        const element = `<div class="col-1 mx-3">FizzBuzz</div>`
+        const element = `<div class="col col_special_3">FizzBuzz</div>`
         console.log("iterazione n: FizzBuzz");
         duck.innerHTML += element;
     }
 
     // Per i multipli di 3 stampi “Fizz” al posto del numero
     else if (number % 3 === 0) {
-        const element = `<div class="col-1 mx-3">Fizz</div>`
+        const element = `<div class="col col_special_1">Fizz</div>`
         console.log("iterazione n: Fizz");
         duck.innerHTML += element;
     }
 
     // Per i multipli di 5 stampi "Buzz" al posto del numero.
     else if (number % 5 === 0) {
-        const element = `<div class="col-1 mx-3">Buzz</div>`
+        const element = `<div class="col col_special_2">Buzz</div>`
         console.log("iterazione n: Buzz");
         duck.innerHTML += element;
     }
 
     else {
-        const element = `<div class="col-1 mx-3">${number}</div>`
+        const element = `<div class="col">${number}</div>`
         console.log("iterazione n: " + number);
         duck.innerHTML += element;
     }
