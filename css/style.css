@@ -1,0 +1,19 @@
+/* Regole generali */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #222222;
+}
+
+#bg_main{
+    background-color: #083b4c;
+}
+
+main h1{
+    color: white;
+    font-size: 80px;
+}
